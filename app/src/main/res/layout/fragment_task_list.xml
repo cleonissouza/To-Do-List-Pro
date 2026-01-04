@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_lue"
+    android:padding="18dp"
+    android:layout_height="match_parent"
+    tools:context=".TaskListFragment">
+
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:weightSum="4">
+
+       <Button
+           android:id="@+id/btnAll"
+           android:layout_width="75dp"
+           android:layout_height="wrap_content"
+           android:layout_marginEnd="4dp"
+           android:layout_weight="1"
+           android:text="todas"/>
+
+       <Button
+           android:id="@+id/btnHigh"
+           android:layout_width="75dp"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="4dp"
+           android:layout_marginEnd="4dp"
+           android:layout_weight="1"
+           android:text="Alta"/>
+
+       <Button
+           android:id="@+id/btnMedium"
+           android:layout_width="76dp"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="4dp"
+           android:layout_marginEnd="4dp"
+           android:layout_weight="1"
+           android:text="media"/>
+
+       <Button
+           android:id="@+id/btnLow"
+           android:layout_width="75dp"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="4dp"
+           android:layout_marginEnd="4dp"
+           android:layout_weight="1"
+           android:text="baixa"/>
+
+   </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_input_add" />
+
+</LinearLayout>

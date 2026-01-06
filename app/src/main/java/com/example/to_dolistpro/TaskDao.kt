@@ -4,6 +4,7 @@ import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
+import androidx.room.Update
 
 @Dao
 interface TaskDao {
@@ -14,6 +15,8 @@ interface TaskDao {
     @Insert
     fun insert(task: TaskEntity)
 
+    @Update
+    fun update(task: TaskEntity)
     @Delete
     fun delete(task: TaskEntity)
 }
